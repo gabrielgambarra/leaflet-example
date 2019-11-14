@@ -12,6 +12,6 @@ export class ShapeService {
   ) { }
 
   getStateShapes(): Observable<any> {
-    return this.http.get('/assets/data/usa-states-border.geojson');
+    return this.http.get('assets/data/usa-states-border.geojson');
   }
 }

@@ -332,7 +332,7 @@ var MarkerService = /** @class */ (function () {
     function MarkerService(http, popupService) {
         this.http = http;
         this.popupService = popupService;
-        this.capitals = '/assets/data/usa-capitals.geojson';
+        this.capitals = 'assets/data/usa-capitals.geojson';
     }
     MarkerService.ScaledRadius = function (val, maxVal) {
         return 20 * (val / maxVal);
@@ -471,7 +471,7 @@ var ShapeService = /** @class */ (function () {
         this.http = http;
     }
     ShapeService.prototype.getStateShapes = function () {
-        return this.http.get('/assets/data/usa-states-border.geojson');
+        return this.http.get('assets/data/usa-states-border.geojson');
     };
     ShapeService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }

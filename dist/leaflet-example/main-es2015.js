@@ -322,7 +322,7 @@ let MarkerService = class MarkerService {
     constructor(http, popupService) {
         this.http = http;
         this.popupService = popupService;
-        this.capitals = '/assets/data/usa-capitals.geojson';
+        this.capitals = 'assets/data/usa-capitals.geojson';
     }
     static ScaledRadius(val, maxVal) {
         return 20 * (val / maxVal);
@@ -434,7 +434,7 @@ let ShapeService = class ShapeService {
         this.http = http;
     }
     getStateShapes() {
-        return this.http.get('/assets/data/usa-states-border.geojson');
+        return this.http.get('assets/data/usa-states-border.geojson');
     }
 };
 ShapeService.ctorParameters = () => [
